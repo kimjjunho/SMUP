@@ -1,8 +1,10 @@
 package com.example.smup.soom
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.smup.R
+import com.example.smup.chat.ChatActivity
 import com.example.smup.databinding.ActivitySoomBinding
 
 class SoomActivity : AppCompatActivity() {
@@ -17,13 +19,27 @@ class SoomActivity : AppCompatActivity() {
         mBinding = ActivitySoomBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.soom_frame, MainFragment())
-            .commit()
-
-        mBinding.back.setOnClickListener {
-            finish()
+        mBinding.two.setOnClickListener{
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.soom_frame, MainFragment())
+                .commit()
         }
-
+    }
+    fun changeFragment(index:Int){
+        when(index){
+            1 -> supportFragmentManager.beginTransaction()
+                .replace(R.id.soom_frame, MainFragment())
+                .commit()
+            2 -> supportFragmentManager.beginTransaction()
+                .replace(R.id.soom_frame, FindFragment())
+                .commit()
+            3 -> supportFragmentManager.beginTransaction()
+                .replace(R.id.soom_frame, ChatFragment())
+                .commit()
+            4 -> supportFragmentManager.beginTransaction()
+                .replace(R.id.soom_frame, AccountFragment())
+                .commit()
+            5 -> startActivity(Intent(applicationContext, MakeSoomActivity::class.java))
+        }
     }
 }

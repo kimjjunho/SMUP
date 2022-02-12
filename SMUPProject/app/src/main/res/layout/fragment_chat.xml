@@ -1,14 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".soom.ChatFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/soom_search_gray"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:background="#00ff0000"
+        android:hint="검색하실 채팅방 이름을 입력해주세요."
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/soom_search_grayline"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/soom_search_cancel"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/all_cancel_btn"
+        android:layout_width="24dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="10dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/inter_regular"
+        android:includeFontPadding="false"
+        android:text="취소"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#C699FF"
+        android:src="@drawable/soom_button_add_small"
+        app:borderWidth="0dp"
+        app:fabCustomSize="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab3"
+        app:layout_constraintEnd_toEndOf="@+id/fab3"
+        app:layout_constraintStart_toStartOf="@+id/fab3"
+        app:layout_constraintTop_toTopOf="@+id/fab3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#C699FF"
+        android:src="@drawable/soom_button_account_small"
+        app:borderWidth="0dp"
+        app:fabCustomSize="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab2"
+        app:layout_constraintEnd_toEndOf="@+id/fab2"
+        app:layout_constraintStart_toStartOf="@+id/fab2"
+        app:layout_constraintTop_toTopOf="@+id/fab2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#C699FF"
+        android:src="@drawable/soom_button_search_small"
+        app:borderWidth="0dp"
+        app:fabCustomSize="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab1"
+        app:layout_constraintEnd_toEndOf="@+id/fab1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fab1"
+        app:layout_constraintTop_toTopOf="@+id/fab1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#C699FF"
+        android:src="@drawable/soom_button_main_small"
+        app:borderWidth="0dp"
+        app:fabCustomSize="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="@+id/fab"
+        app:layout_constraintTop_toTopOf="@+id/fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#C699FF"
+        android:src="@drawable/soom_button_chat"
+        app:fabCustomSize="54dp"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

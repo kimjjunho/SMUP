@@ -1,14 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".soom.AccountFragment">
+    tools:context=".soom.AccountFragment"
+    android:id="@+id/mainFrame"
+    android:gravity="bottom"
+    app:umanoScrollableView="@id/dragView"
+    app:umanoPanelHeight="0dp"
+    app:umanoOverlay="true"
+    app:umanoShadowHeight="0dp"
+    app:umanoParallaxOffset="0dp"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:background="@drawable/soom_account_purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/soom_button_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="이름"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:includeFontPadding="false"
+                android:text="대덕소프트웨어마이스터고등학교"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="soom"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <ImageButton
+            android:id="@+id/send_image_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/soom_account_send"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="119dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:background="#00ff0000"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:text="내가 지원한 동아리"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/send_image_btn"
+            app:layout_constraintStart_toEndOf="@+id/send_image_btn"
+            app:layout_constraintTop_toTopOf="@+id/send_image_btn" />
+
+        <ImageButton
+            android:id="@+id/bookmark_image_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/soom_account_bookmark"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/send_image_btn" />
+
+        <Button
+            android:id="@+id/bookmark_btn"
+            android:layout_width="169dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:background="#00ff0000"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:text="내가 가입되어 있는 soom"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bookmark_image_btn"
+            app:layout_constraintStart_toEndOf="@+id/bookmark_image_btn"
+            app:layout_constraintTop_toTopOf="@+id/bookmark_image_btn" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#C699FF"
+            android:src="@drawable/soom_button_search_small"
+            app:borderWidth="0dp"
+            app:fabCustomSize="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab2"
+            app:layout_constraintEnd_toEndOf="@+id/fab2"
+            app:layout_constraintStart_toStartOf="@+id/fab2"
+            app:layout_constraintTop_toTopOf="@+id/fab2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#C699FF"
+            android:src="@drawable/soom_button_chat_small"
+            app:borderWidth="0dp"
+            app:fabCustomSize="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab1"
+            app:layout_constraintEnd_toEndOf="@+id/fab1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fab1"
+            app:layout_constraintTop_toTopOf="@+id/fab1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#C699FF"
+            android:src="@drawable/soom_button_main_small"
+            app:borderWidth="0dp"
+            app:fabCustomSize="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab"
+            app:layout_constraintEnd_toEndOf="@+id/fab"
+            app:layout_constraintStart_toStartOf="@+id/fab"
+            app:layout_constraintTop_toTopOf="@+id/fab" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#C699FF"
+            android:src="@drawable/soom_button_account"
+            app:fabCustomSize="54dp"
+            app:borderWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/soom_account_slide"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/slide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:includeFontPadding="false"
+            android:text="내가 지원한 SOOM"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slide_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
