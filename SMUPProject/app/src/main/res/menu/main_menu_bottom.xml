@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/main_home"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/menu_dms"
+        android:icon="@drawable/main_dms"
+        android:title="dms" />
+
+    <item
+        android:id="@+id/menu_soom"
+        android:icon="@drawable/main_soom"
+        android:title="soom"/>
+
+    <item
+        android:id="@+id/menu_mypage"
+        android:icon="@drawable/main_mypage"
+        android:title="마이페이지"/>
+</menu>

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMUP">
         <activity
-            android:name=".soom.SlidingUpActivity"
+            android:name=".soom.SoomActivity"
             android:exported="false" />
         <activity
             android:name=".soom.MakeSoomActivity"
@@ -19,7 +19,7 @@
             android:name=".chat.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".soom.SoomActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
