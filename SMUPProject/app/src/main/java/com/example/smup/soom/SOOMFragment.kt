@@ -7,10 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import com.example.smup.MainActivity
 import com.example.smup.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MainFragment : Fragment() {
+class SOOMFragment : Fragment() {
 
     var isfabOpen = false
 
@@ -21,7 +22,7 @@ class MainFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView : View =  inflater.inflate(R.layout.fragment_main, container, false)
-        val soomActivity = activity as SoomActivity
+        val mainActivity = activity as MainActivity
         val fab : FloatingActionButton = rootView.findViewById(R.id.fab)
         val fab1 : FloatingActionButton = rootView.findViewById(R.id.fab1)
         val fab2 : FloatingActionButton = rootView.findViewById(R.id.fab2)
@@ -48,16 +49,16 @@ class MainFragment : Fragment() {
             }
         }
         fab1.setOnClickListener {
-            soomActivity.changeFragment(2)
+            mainActivity.changeFragment(2)
         }
         fab2.setOnClickListener {
-            soomActivity.changeFragment(3)
+            mainActivity.changeFragment(3)
         }
         fab3.setOnClickListener {
-            soomActivity.changeFragment(4)
+            mainActivity.changeFragment(4)
         }
         fab4.setOnClickListener {
-            soomActivity.changeFragment(5)
+            mainActivity.changeFragment(5)
         }
 
         return rootView

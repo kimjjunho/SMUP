@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentAccountBinding
 import com.example.smup.databinding.FragmentFindBinding
@@ -28,7 +29,7 @@ class AccountFragment : Fragment() {
         mBinding =  FragmentAccountBinding.inflate(inflater, container, false)
         val view = binding.root
         val binding = FragmentAccountBinding.bind(view)
-        val soomActivity = activity as SoomActivity
+        val mainActivity = activity as MainActivity
 
         binding.sendImageBtn.setOnClickListener {
             binding.mainFrame.panelState = SlidingUpPanelLayout.PanelState.ANCHORED
@@ -56,13 +57,13 @@ class AccountFragment : Fragment() {
             }
         }
         binding.fab1.setOnClickListener {
-            soomActivity.changeFragment(1)
+            mainActivity.changeFragment(1)
         }
         binding.fab2.setOnClickListener {
-            soomActivity.changeFragment(3)
+            mainActivity.changeFragment(3)
         }
         binding.fab3.setOnClickListener {
-            soomActivity.changeFragment(2)
+            mainActivity.changeFragment(2)
         }
 
         return view

@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentFindBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -27,17 +28,17 @@ class FindFragment : Fragment() {
         mBinding = FragmentFindBinding.inflate(inflater,container,false)
         val view = binding.root
         val binding = FragmentFindBinding.bind(view)
-        val soomActivity = activity as SoomActivity
+        val mainActivity = activity as MainActivity
 
         binding.searchText.addTextChangedListener(object :TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 if(binding.searchText.text.isEmpty()){
-                    binding.searchLine.setBackgroundColor(soomActivity.getColor(R.color.gray))
+                    binding.searchLine.setBackgroundColor(mainActivity.getColor(R.color.gray))
                     binding.cancelBtn.visibility = View.INVISIBLE
                     binding.searchBtn.setImageResource(R.drawable.soom_search_gray)
                 }else{
-                    binding.searchLine.setBackgroundColor(soomActivity.getColor(R.color.black))
+                    binding.searchLine.setBackgroundColor(mainActivity.getColor(R.color.black))
                     binding.cancelBtn.visibility = View.VISIBLE
                     binding.searchBtn.setImageResource(R.drawable.soom_search_black)
                 }
@@ -57,16 +58,16 @@ class FindFragment : Fragment() {
         }
 
         binding.web.setOnClickListener {
-            textColor(soomActivity)
-            binding.webText.setTextColor(soomActivity.getColor(R.color.red))
+            textColor(mainActivity)
+            binding.webText.setTextColor(mainActivity.getColor(R.color.red))
         }
         binding.app.setOnClickListener {
-            textColor(soomActivity)
-            binding.appText.setTextColor(soomActivity.getColor(R.color.yellow))
+            textColor(mainActivity)
+            binding.appText.setTextColor(mainActivity.getColor(R.color.yellow))
         }
         binding.back.setOnClickListener {
-            textColor(soomActivity)
-            binding.backText.setTextColor(soomActivity.getColor(R.color.blue))
+            textColor(mainActivity)
+            binding.backText.setTextColor(mainActivity.getColor(R.color.blue))
         }
 
         binding.fab.setOnClickListener {
@@ -88,25 +89,25 @@ class FindFragment : Fragment() {
             }
         }
         mBinding!!.fab1.setOnClickListener {
-            soomActivity.changeFragment(1)
+            mainActivity.changeFragment(1)
         }
         binding.fab2.setOnClickListener {
-            soomActivity.changeFragment(3)
+            mainActivity.changeFragment(3)
         }
         binding.fab3.setOnClickListener {
-            soomActivity.changeFragment(4)
+            mainActivity.changeFragment(4)
         }
         binding.fab4.setOnClickListener {
-            soomActivity.changeFragment(5)
+            mainActivity.changeFragment(5)
         }
 
         return view
     }
 
-    fun textColor(soomActivity: SoomActivity){
-        binding.appText.setTextColor(soomActivity.getColor(R.color.white))
-        binding.webText.setTextColor(soomActivity.getColor(R.color.white))
-        binding.backText.setTextColor(soomActivity.getColor(R.color.white))
+    fun textColor(mainActivity: MainActivity){
+        binding.appText.setTextColor(mainActivity.getColor(R.color.white))
+        binding.webText.setTextColor(mainActivity.getColor(R.color.white))
+        binding.backText.setTextColor(mainActivity.getColor(R.color.white))
     }
 
     companion object {

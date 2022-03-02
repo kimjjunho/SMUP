@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.smup.R
-import com.example.smup.chat.ChatActivity
 import com.example.smup.databinding.ActivitySoomBinding
 
 class SoomActivity : AppCompatActivity() {
@@ -21,14 +20,14 @@ class SoomActivity : AppCompatActivity() {
 
         mBinding.two.setOnClickListener{
             supportFragmentManager.beginTransaction()
-                .replace(R.id.soom_frame, MainFragment())
+                .replace(R.id.soom_frame, SOOMFragment())
                 .commit()
         }
     }
     fun changeFragment(index:Int){
         when(index){
             1 -> supportFragmentManager.beginTransaction()
-                .replace(R.id.soom_frame, MainFragment())
+                .replace(R.id.soom_frame, SOOMFragment())
                 .commit()
             2 -> supportFragmentManager.beginTransaction()
                 .replace(R.id.soom_frame, FindFragment())

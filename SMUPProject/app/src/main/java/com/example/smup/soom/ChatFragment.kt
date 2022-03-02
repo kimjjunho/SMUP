@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentChatBinding
 import com.example.smup.databinding.FragmentFindBinding
@@ -25,7 +26,7 @@ class ChatFragment : Fragment() {
         mBinding = FragmentChatBinding.inflate(inflater,container,false)
         val view = binding.root
         val binding = FragmentChatBinding.bind(view)
-        val soomActivity = activity as SoomActivity
+        val mainActivity = activity as MainActivity
 
         binding.fab.setOnClickListener {
             if(isfabOpen){
@@ -46,16 +47,16 @@ class ChatFragment : Fragment() {
             }
         }
         binding.fab1.setOnClickListener {
-           soomActivity.changeFragment(1)
+           mainActivity.changeFragment(1)
         }
         binding.fab2.setOnClickListener {
-            soomActivity.changeFragment(2)
+            mainActivity.changeFragment(2)
         }
         binding.fab3.setOnClickListener {
-            soomActivity.changeFragment(4)
+            mainActivity.changeFragment(4)
         }
         binding.fab4.setOnClickListener {
-            soomActivity.changeFragment(5)
+            mainActivity.changeFragment(5)
         }
 
         return view
