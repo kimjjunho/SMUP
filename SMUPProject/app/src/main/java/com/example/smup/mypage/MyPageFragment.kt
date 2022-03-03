@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
 import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentFindBinding
@@ -19,6 +21,8 @@ class MyPageFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -38,6 +42,17 @@ class MyPageFragment : Fragment() {
         }
 
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val mWindow = requireActivity().window
+        mWindow.statusBarColor = ContextCompat.getColor(requireActivity(),R.color.purple)
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        val mWindow = requireActivity().window
+        mWindow.statusBarColor = ContextCompat.getColor(requireActivity(),R.color.white)
     }
 
     companion object {

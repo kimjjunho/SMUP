@@ -1,11 +1,14 @@
 package com.example.smup.soom
 
 import android.animation.ObjectAnimator
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
 import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentAccountBinding
@@ -30,6 +33,11 @@ class AccountFragment : Fragment() {
         val view = binding.root
         val binding = FragmentAccountBinding.bind(view)
         val mainActivity = activity as MainActivity
+
+        val mWindow = requireActivity().window
+        mWindow.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        mWindow.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        mWindow.statusBarColor = ContextCompat.getColor(requireActivity(),R.color.purple)
 
         binding.sendImageBtn.setOnClickListener {
             binding.mainFrame.panelState = SlidingUpPanelLayout.PanelState.ANCHORED
@@ -67,6 +75,12 @@ class AccountFragment : Fragment() {
         }
 
         return view
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val mWindow = requireActivity().window
+        mWindow.statusBarColor = ContextCompat.getColor(requireActivity(),R.color.white)
     }
 
     companion object {
