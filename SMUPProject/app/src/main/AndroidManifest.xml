@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMUP">
         <activity
+            android:name=".start.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.AlarmActivity"
             android:exported="false" />
         <activity

@@ -72,4 +72,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             5 -> startActivity(Intent(applicationContext, MakeSoomActivity::class.java))
         }
     }
+    fun logout(){
+        finish()
+    }
 }

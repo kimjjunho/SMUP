@@ -13,6 +13,7 @@ import com.example.smup.R
 import com.example.smup.databinding.FragmentFindBinding
 import com.example.smup.databinding.FragmentMyPageBinding
 import com.example.smup.soom.FindFragment
+import com.example.smup.start.LoginActivity
 
 class MyPageFragment : Fragment() {
 
@@ -30,14 +31,22 @@ class MyPageFragment : Fragment() {
         val binding = FragmentMyPageBinding.bind(view)
         val mainActivity = activity as MainActivity
 
-        binding.userImage.setOnClickListener {
-            startActivity(Intent(mainActivity, UserActivity::class.java))
+        binding.userImage.setOnClickListener { startActivity(Intent(mainActivity, UserActivity::class.java)) }
+        binding.userBtn.setOnClickListener { startActivity(Intent(mainActivity, UserActivity::class.java)) }
+
+        binding.ringImage.setOnClickListener { startActivity(Intent(mainActivity, RingActivity::class.java)) }
+        binding.ringBtn.setOnClickListener { startActivity(Intent(mainActivity, RingActivity::class.java)) }
+
+        binding.schoolImage.setOnClickListener { startActivity(Intent(mainActivity, SchoolActivity::class.java)) }
+        binding.schoolBtn.setOnClickListener { startActivity(Intent(mainActivity, SchoolActivity::class.java)) }
+
+        binding.outImage.setOnClickListener {
+            startActivity(Intent(mainActivity, LoginActivity::class.java))
+            mainActivity.logout()
         }
-        binding.ringImage.setOnClickListener {
-            startActivity(Intent(mainActivity, RingActivity::class.java))
-        }
-        binding.schoolImage.setOnClickListener {
-            startActivity(Intent(mainActivity, SchoolActivity::class.java))
+        binding.outBtn.setOnClickListener {
+            startActivity(Intent(mainActivity, LoginActivity::class.java))
+            mainActivity.logout()
         }
 
         return view
