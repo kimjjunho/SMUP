@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMUP">
         <activity
+            android:name=".mypage.SchoolActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.RingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mypage.UserActivity"
+            android:exported="false" />
+        <activity
             android:name=".soom.SoomActivity"
             android:exported="false" />
         <activity

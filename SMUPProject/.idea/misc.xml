@@ -33,18 +33,22 @@
         <entry key="app/src/main/res/layout/activity_chat.xml" value="0.1983695652173913" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_make_soom.xml" value="0.2576145860925831" />
+        <entry key="app/src/main/res/layout/activity_ring.xml" value="0.2758152173913043" />
+        <entry key="app/src/main/res/layout/activity_school.xml" value="0.4830306936505155" />
         <entry key="app/src/main/res/layout/activity_sliding_up.xml" value="0.2817028985507246" />
         <entry key="app/src/main/res/layout/activity_soom.xml" value="0.15105194640032843" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.2758152173913043" />
         <entry key="app/src/main/res/layout/dialog_soom_delpost.xml" value="0.29151929557564493" />
         <entry key="app/src/main/res/layout/dialog_soom_forcedexit.xml" value="0.3910392453310541" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.21810540717822494" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_d_m_s.xml" value="0.2758152173913043" />
         <entry key="app/src/main/res/layout/fragment_dms.xml" value="0.27898550724637683" />
         <entry key="app/src/main/res/layout/fragment_find.xml" value="0.2739176840566707" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15989583333333332" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.29764771257807715" />
         <entry key="app/src/main/res/layout/fragment_make_soom.xml" value="0.2856436046814664" />
-        <entry key="app/src/main/res/layout/fragment_my_page.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/layout/fragment_my_page.xml" value="0.38926984978850815" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.27898550724637683" />
         <entry key="app/src/main/res/layout/item_soom1.xml" value="0.6844902340738601" />
         <entry key="app/src/main/res/layout/item_soom_chat.xml" value="0.3001051613895461" />

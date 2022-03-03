@@ -8,6 +8,7 @@ import android.view.View
 import com.example.smup.dms.DMSFragment
 import com.example.smup.home.HomeFragment
 import com.example.smup.mypage.MyPageFragment
+import com.example.smup.mypage.UserActivity
 import com.example.smup.soom.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
