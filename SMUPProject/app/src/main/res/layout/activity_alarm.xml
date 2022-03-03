@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mypage.RingActivity">
+    tools:context=".home.AlarmActivity">
 
     <ImageButton
         android:id="@+id/back_image"
@@ -17,5 +17,13 @@
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_image"
+        tools:layout_editor_absoluteX="-30dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

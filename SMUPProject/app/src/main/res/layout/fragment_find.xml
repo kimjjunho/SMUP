@@ -8,11 +8,11 @@
 
    <ImageButton
        android:id="@+id/search_btn"
-       android:layout_width="20dp"
-       android:layout_height="21dp"
-       android:layout_marginTop="70dp"
-       android:background="#00ff0000"
-       android:scaleType="fitCenter"
+       style="?android:attr/borderlessButtonStyle"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_marginTop="63dp"
+       android:scaleType="centerCrop"
        android:src="@drawable/soom_search_gray"
        app:layout_constraintStart_toStartOf="@+id/guideline9"
        app:layout_constraintTop_toTopOf="parent" />
@@ -45,23 +45,21 @@
 
    <ImageButton
        android:id="@+id/cancel_btn"
-       android:layout_width="15dp"
-       android:layout_height="15dp"
-       android:layout_marginEnd="5dp"
-       android:layout_marginBottom="8dp"
-       android:background="@android:color/transparent"
-       android:scaleType="fitCenter"
+       style="?android:attr/borderlessButtonStyle"
+       android:layout_width="35dp"
+       android:layout_height="35dp"
+       android:scaleType="centerCrop"
        android:src="@drawable/soom_search_cancel"
        android:visibility="invisible"
        app:layout_constraintBottom_toBottomOf="@+id/search_text"
-       app:layout_constraintEnd_toEndOf="@+id/search_text" />
+       app:layout_constraintEnd_toEndOf="@+id/search_text"
+       app:layout_constraintTop_toTopOf="@+id/search_text" />
 
    <Button
        android:id="@+id/all_cancel_btn"
-       android:layout_width="24dp"
-       android:layout_height="16dp"
-       android:layout_marginStart="10dp"
-       android:background="#00ff0000"
+       style="?android:attr/borderlessButtonStyle"
+       android:layout_width="50dp"
+       android:layout_height="35dp"
        android:fontFamily="@font/inter_regular"
        android:includeFontPadding="false"
        android:text="취소"

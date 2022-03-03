@@ -33,9 +33,10 @@
         <entry key="app/src/main/res/drawable/soom_item_whiteview.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/soom_item_yellow.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/soom_line.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/activity_alarm.xml" value="0.266304347826087" />
         <entry key="app/src/main/res/layout/activity_chat.xml" value="0.1983695652173913" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_make_soom.xml" value="0.2576145860925831" />
+        <entry key="app/src/main/res/layout/activity_make_soom.xml" value="0.22998015996444443" />
         <entry key="app/src/main/res/layout/activity_ring.xml" value="0.2758152173913043" />
         <entry key="app/src/main/res/layout/activity_school.xml" value="0.4830306936505155" />
         <entry key="app/src/main/res/layout/activity_sliding_up.xml" value="0.2817028985507246" />
@@ -43,16 +44,18 @@
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.2758152173913043" />
         <entry key="app/src/main/res/layout/dialog_soom_delpost.xml" value="0.29151929557564493" />
         <entry key="app/src/main/res/layout/dialog_soom_forcedexit.xml" value="0.3910392453310541" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.21810540717822494" />
-        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.3269283757051115" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.3495085594381044" />
         <entry key="app/src/main/res/layout/fragment_d_m_s.xml" value="0.2758152173913043" />
         <entry key="app/src/main/res/layout/fragment_dms.xml" value="0.27898550724637683" />
-        <entry key="app/src/main/res/layout/fragment_find.xml" value="0.2739176840566707" />
+        <entry key="app/src/main/res/layout/fragment_find.xml" value="0.18339184444847006" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.34444787171672064" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.29764771257807715" />
         <entry key="app/src/main/res/layout/fragment_make_soom.xml" value="0.2856436046814664" />
+        <entry key="app/src/main/res/layout/fragment_meal.xml" value="0.2726449275362319" />
         <entry key="app/src/main/res/layout/fragment_my_page.xml" value="0.2197135675337604" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.27898550724637683" />
+        <entry key="app/src/main/res/layout/fragment_schedule.xml" value="0.2694746376811594" />
         <entry key="app/src/main/res/layout/item_soom1.xml" value="0.6844902340738601" />
         <entry key="app/src/main/res/layout/item_soom_chat.xml" value="0.3001051613895461" />
         <entry key="app/src/main/res/layout/item_soom_find.xml" value="0.27688976501424206" />

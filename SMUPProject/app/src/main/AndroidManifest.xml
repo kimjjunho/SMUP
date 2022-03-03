@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMUP">
         <activity
+            android:name=".home.AlarmActivity"
+            android:exported="false" />
+        <activity
             android:name=".mypage.SchoolActivity"
             android:exported="false" />
         <activity
@@ -29,7 +32,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
