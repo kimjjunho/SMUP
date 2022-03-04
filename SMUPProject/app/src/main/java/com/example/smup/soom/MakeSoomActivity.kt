@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import com.example.smup.R
 import com.example.smup.databinding.ActivityMakeSoomBinding
 
@@ -34,9 +35,11 @@ class MakeSoomActivity : AppCompatActivity() {
                     mBinding.nameLine.setBackgroundColor(applicationContext.getColor(R.color.black))
                 }
                 if(mBinding.nameText.text.isNotEmpty() &&mBinding.mainText.text.isNotEmpty()){
-                    mBinding.makeBtn.setBackgroundResource(R.drawable.soom_button_makesoom_purple)
+                    mBinding.backImage.setBackgroundResource(R.drawable.soom_button_makesoom_purple)
+                    mBinding.makeBtn.visibility = View.VISIBLE
                 }else{
-                    mBinding.makeBtn.setBackgroundResource(R.drawable.soom_button_makesoom_gray)
+                    mBinding.backImage.setBackgroundResource(R.drawable.soom_button_makesoom_gray)
+                    mBinding.makeBtn.visibility = View.INVISIBLE
                 }
             }
             override fun afterTextChanged(p0: Editable?) {}
@@ -52,9 +55,12 @@ class MakeSoomActivity : AppCompatActivity() {
                     mBinding.mainLine.setBackgroundColor(applicationContext.getColor(R.color.black))
                 }
                 if(mBinding.nameText.text.isNotEmpty() &&mBinding.mainText.text.isNotEmpty()){
-                    mBinding.makeBtn.setBackgroundResource(R.drawable.soom_button_makesoom_purple)
+                    mBinding.backImage.setBackgroundResource(R.drawable.soom_button_makesoom_purple)
+                    mBinding.makeBtn.visibility = View.VISIBLE
+
                 }else{
-                    mBinding.makeBtn.setBackgroundResource(R.drawable.soom_button_makesoom_gray)
+                    mBinding.backImage.setBackgroundResource(R.drawable.soom_button_makesoom_gray)
+                    mBinding.makeBtn.visibility = View.INVISIBLE
                 }
             }
             override fun afterTextChanged(p0: Editable?) {}

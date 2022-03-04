@@ -111,19 +111,36 @@
         app:layout_constraintTop_toBottomOf="@+id/main_text" />
 
     <Button
-        android:id="@+id/make_btn"
+        android:id="@+id/back_image"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="72dp"
+        android:includeFontPadding="false"
         android:text="SOOM 만들기"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:gravity="center"
         android:fontFamily="@font/inter_bold"
-        android:includeFontPadding="false"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/soom_button_makesoom_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/make_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:includeFontPadding="false"
+        android:text="SOOM 만들기"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_bold"
+        android:background="@drawable/soom_makesoom_btn"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/back_image"
+        app:layout_constraintEnd_toEndOf="@+id/back_image"
+        app:layout_constraintStart_toStartOf="@+id/back_image"
+        app:layout_constraintTop_toTopOf="@+id/back_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>
