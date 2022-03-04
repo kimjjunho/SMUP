@@ -12,5 +12,18 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="boxStrokeColor">@color/black</item> // Focus 상태일때 밑줄 색.
+        <item name="helperTextTextColor">@color/black</item>
+    </style>
+    <style name="EditTextGreyStyle" parent="Widget.Design.TextInputLayout">
+
+        <item name="colorControlNormal">@color/black</item>  // unFocus 상태일때 밑줄 색.
+        <item name="boxStrokeColor">@color/black</item> // Focus 상태일때 밑줄 색.
+        <item name="android:textCursorDrawable">@color/black</item>  // cursor 색.
+
+        <item name="android:textColorHint">@color/black</item>  // hint 색
+        <item name="hintTextColor">@color/black</item>   // floating hint 색
+        <item name="helperTextTextColor">@color/black</item>
+        <item name="errorTextColor">@color/black</item>
     </style>
 </resources>

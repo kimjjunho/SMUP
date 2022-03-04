@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home.MealFragment">
 
+    <TextView
+        android:id="@+id/day_text"
+        android:layout_width="47dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_regular"
+        android:includeFontPadding="false"
+        android:text="금요일"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="meal" />
+        android:id="@+id/date_text"
+        android:layout_width="78dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/inter_regular"
+        android:includeFontPadding="false"
+        android:text="2022.01.07"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_text" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/left_iamge"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/date_text"
+        app:layout_constraintStart_toStartOf="@+id/first_text"
+        app:layout_constraintTop_toTopOf="@+id/day_text" />
+
+    <ImageButton
+        android:id="@+id/right_image"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_right"
+        app:layout_constraintBottom_toBottomOf="@+id/date_text"
+        app:layout_constraintEnd_toEndOf="@+id/first_text"
+        app:layout_constraintTop_toTopOf="@+id/day_text" />
+
+    <TextView
+        android:id="@+id/first_text"
+        android:layout_width="300dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/meal_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="300dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/meal_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_text" />
+
+    <TextView
+        android:id="@+id/third_text"
+        android:layout_width="300dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/meal_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

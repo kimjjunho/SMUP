@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/drawable/main_bottom_color.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/main_bottom_icon_color.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/main_navigation_background.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/drawable/meal_box.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/ring_switch_off.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/ring_switch_on.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/ring_switch_selector.xml" value="0.3494791666666667" />
@@ -40,16 +41,18 @@
         <entry key="app/src/main/res/drawable/soom_item_whiteview.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/soom_item_yellow.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/soom_line.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/drawable/soom_makesoom_btn.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/user_cursor_color.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_alarm.xml" value="0.266304347826087" />
         <entry key="app/src/main/res/layout/activity_chat.xml" value="0.1983695652173913" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2468055713330994" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_make_soom.xml" value="0.22998015996444443" />
         <entry key="app/src/main/res/layout/activity_ring.xml" value="0.38311974895404427" />
-        <entry key="app/src/main/res/layout/activity_school.xml" value="0.4830306936505155" />
+        <entry key="app/src/main/res/layout/activity_school.xml" value="0.28948933780095165" />
         <entry key="app/src/main/res/layout/activity_sliding_up.xml" value="0.2817028985507246" />
         <entry key="app/src/main/res/layout/activity_soom.xml" value="0.15105194640032843" />
-        <entry key="app/src/main/res/layout/activity_user.xml" value="0.4635276957092066" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.2689628749203032" />
         <entry key="app/src/main/res/layout/dialog_soom_delpost.xml" value="0.29151929557564493" />
         <entry key="app/src/main/res/layout/dialog_soom_forcedexit.xml" value="0.3910392453310541" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.3269283757051115" />
