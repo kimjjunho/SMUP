@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mypage.SchoolActivity">
+
     <ImageButton
         android:id="@+id/back_image"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginTop="32dp"
         android:scaleType="centerCrop"
         android:src="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
