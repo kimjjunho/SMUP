@@ -33,9 +33,9 @@ class ScheduleFragment : Fragment() {
         val timer = Timer()
         val timerTask: TimerTask = object : TimerTask(){
             override fun run() {
-                CurrentProgress = CurrentProgress + 1
-                progressBar!!.setProgress(CurrentProgress)
-                progressBar!!.setMax(60)
+                CurrentProgress += 1
+                progressBar!!.progress = CurrentProgress
+                progressBar!!.max = 60
                 if(CurrentProgress>=60){
                     CurrentProgress = 0
                 }

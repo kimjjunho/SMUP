@@ -152,52 +152,64 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="6"
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintCircle="@id/circle_progressbar"
-        app:layout_constraintCircleRadius="120dp"
         app:layout_constraintCircleAngle="180"
-        android:includeFontPadding="false"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintCircleRadius="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="253dp" />
 
     <TextView
+        android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="7"
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintCircle="@id/circle_progressbar"
-        app:layout_constraintCircleRadius="120dp"
         app:layout_constraintCircleAngle="210"
-        android:includeFontPadding="false"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintCircleRadius="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="236dp" />
 
     <TextView
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="8"
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintCircle="@id/circle_progressbar"
-        app:layout_constraintCircleRadius="120dp"
         app:layout_constraintCircleAngle="240"
-        android:includeFontPadding="false"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintCircleRadius="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="192dp" />
 
     <TextView
+        android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="9"
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintCircle="@id/circle_progressbar"
-        app:layout_constraintCircleRadius="120dp"
         app:layout_constraintCircleAngle="270"
-        android:includeFontPadding="false"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintCircleRadius="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="132dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -245,5 +257,69 @@
         android:includeFontPadding="false"
         android:textColor="@color/black"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_regular"
+        android:includeFontPadding="false"
+        android:text="1교시 국어"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_progressbar" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:fontFamily="@font/inter_semibold"
+        android:includeFontPadding="false"
+        android:text="8:40 ~ 9:30"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/schedule_textbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:text="2교시 수학"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter_regular"
+            android:includeFontPadding="false"
+            android:text="공지사항이 없습니다"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
