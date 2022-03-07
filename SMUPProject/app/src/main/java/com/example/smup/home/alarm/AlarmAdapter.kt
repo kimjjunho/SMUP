@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smup.R
+import java.util.*
+import kotlin.collections.ArrayList
 
 class AlarmAdapter(private val alarmList : ArrayList<AlarmData>):RecyclerView.Adapter<AlarmAdapter.CustomViewHolder>() {
 
@@ -25,10 +27,6 @@ class AlarmAdapter(private val alarmList : ArrayList<AlarmData>):RecyclerView.Ad
         return alarmList.size
     }
 
-    override fun onChildDraw(){
-        
-    }
-
     class CustomViewHolder(itemView : View):RecyclerView.ViewHolder(itemView){
         val view : View = itemView
         val itemText : TextView = view.findViewById(R.id.item_text)
@@ -36,5 +34,15 @@ class AlarmAdapter(private val alarmList : ArrayList<AlarmData>):RecyclerView.Ad
         fun bind(list:AlarmData){
             itemText.text = list.itemText
         }
+    }
+
+    fun swapData(fromPos: Int, toPos: Int) {
+        Collections.swap(alarmList, fromPos, toPos)
+        notifyItemMoved(fromPos, toPos)
+    }
+
+    fun removeData(position: Int) {
+        alarmList.removeAt(position)
+        notifyItemRemoved(position)
     }
 }

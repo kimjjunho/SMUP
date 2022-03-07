@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/drawable/alarm_delete_btn.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/drawable/alarm_read_btn.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/circle_gray.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/drawable/circle_white.xml" value="0.3494791666666667" />
@@ -68,7 +70,7 @@
         <entry key="app/src/main/res/layout/fragment_my_page.xml" value="0.2197135675337604" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.27898550724637683" />
         <entry key="app/src/main/res/layout/fragment_schedule.xml" value="0.2684491035302318" />
-        <entry key="app/src/main/res/layout/item_alarm.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_alarm.xml" value="0.34860760935477153" />
         <entry key="app/src/main/res/layout/item_soom1.xml" value="0.6844902340738601" />
         <entry key="app/src/main/res/layout/item_soom_chat.xml" value="0.3001051613895461" />
         <entry key="app/src/main/res/layout/item_soom_find.xml" value="0.27688976501424206" />
