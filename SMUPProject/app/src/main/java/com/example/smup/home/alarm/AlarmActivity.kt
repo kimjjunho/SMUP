@@ -1,4 +1,4 @@
-package com.example.smup.home
+package com.example.smup.home.alarm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

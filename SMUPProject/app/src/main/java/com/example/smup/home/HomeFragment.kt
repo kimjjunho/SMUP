@@ -6,11 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentTransaction
 import com.example.smup.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentHomeBinding
-import com.example.smup.databinding.FragmentMyPageBinding
+import com.example.smup.home.alarm.AlarmActivity
 
 class HomeFragment : Fragment() {
 
@@ -32,7 +31,7 @@ class HomeFragment : Fragment() {
         childFragmentManager.beginTransaction().replace(R.id.home_frame, scheduleFragment0).commit()
 
         binding.alarmImage.setOnClickListener {
-            startActivity(Intent(mainActivity,AlarmActivity::class.java))
+            startActivity(Intent(mainActivity, AlarmActivity::class.java))
         }
 
         binding.radioGroup.setOnCheckedChangeListener{ radioGroup, i ->

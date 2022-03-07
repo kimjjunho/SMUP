@@ -13,7 +13,7 @@
             android:name=".start.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".home.AlarmActivity"
+            android:name=".home.alarm.AlarmActivity"
             android:exported="false" />
         <activity
             android:name=".mypage.SchoolActivity"
