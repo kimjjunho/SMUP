@@ -13,8 +13,9 @@ import java.util.*
 
 class ScheduleFragment : Fragment() {
 
-    private var CurrentProgress = 0
     private var progressBar: ProgressBar? = null
+    private var progress = 0
+    private var rotaion = 0F
     private var mBinding : FragmentScheduleBinding? = null
     private val binding get() = mBinding!!
 
@@ -28,22 +29,40 @@ class ScheduleFragment : Fragment() {
         val view = binding.root
         val binding = FragmentScheduleBinding.bind(view)
 
-        progressBar = binding.circleProgressbar
+        timeSolve(5,55, 7, 56)
 
-        val timer = Timer()
-        val timerTask: TimerTask = object : TimerTask(){
-            override fun run() {
-                CurrentProgress += 1
-                progressBar!!.progress = CurrentProgress
-                progressBar!!.max = 60
-                if(CurrentProgress>=60){
-                    CurrentProgress = 0
-                }
-            }
-        }
-        timer.schedule(timerTask, 0, 1000)
+        progressBar = binding.circleProgressbar
+        progressBar!!.rotation = rotaion
+        println(progress)
+        progressBar!!.progress = progress
 
         return view
+    }
+
+    fun timeSolve(sHour1 : Int, sMin1 : Int, eHour1 : Int, eMin1 : Int){
+        var sHour = 0.0F
+        var sMin = 0F
+        var eHour = 0
+        var eMin = 0
+        var total = 0.0
+
+        sHour = if(sHour1<3){ (sHour1+9)*30F }
+        else{ (sHour1 - 3)*30F }
+
+        sMin = 0.5F * sMin1
+        rotaion = sHour + sMin
+
+        if(sMin1>eMin1){
+            eMin = eMin1 + 60 - sMin1
+            eHour = eHour1 - sHour1 - 1
+            total = eMin * 0.14 + eHour * 8.3
+            progress = total.toInt()
+        }else{
+            eMin = eMin1 - sMin1
+            eHour = eHour1 - sHour1
+            total = eMin * 0.14 + eHour * 8.3
+            progress = total.toInt()
+        }
     }
 
     companion object {
