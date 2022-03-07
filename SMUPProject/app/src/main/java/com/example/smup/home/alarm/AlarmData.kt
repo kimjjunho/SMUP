@@ -1,4 +1,3 @@
 package com.example.smup.home.alarm
 
-class AlarmData {
-}
+class AlarmData (val itemText : String)
