@@ -9,6 +9,7 @@ import android.widget.ProgressBar
 import com.example.smup.R
 import com.example.smup.databinding.FragmentMyPageBinding
 import com.example.smup.databinding.FragmentScheduleBinding
+import java.text.SimpleDateFormat
 import java.util.*
 
 class ScheduleFragment : Fragment() {
@@ -16,6 +17,7 @@ class ScheduleFragment : Fragment() {
     private var progressBar: ProgressBar? = null
     private var progress = 0
     private var rotaion = 0F
+    private var time = ""
     private var mBinding : FragmentScheduleBinding? = null
     private val binding get() = mBinding!!
 
@@ -29,11 +31,17 @@ class ScheduleFragment : Fragment() {
         val view = binding.root
         val binding = FragmentScheduleBinding.bind(view)
 
-        timeSolve(5,55, 7, 56)
+        getTime()
+        val iTime = time.toInt()
+        println(iTime-(iTime/100*100))
+        if(iTime-(iTime/100*100)+45>=60){
+            timeSolve(iTime/100,iTime-(iTime/100*100), iTime/100+1, iTime-(iTime/100*100)+45-60)
+        }else{
+            timeSolve(iTime/100,iTime-(iTime/100*100), iTime/100, iTime-(iTime/100*100)+45)
+        }
 
         progressBar = binding.circleProgressbar
         progressBar!!.rotation = rotaion
-        println(progress)
         progressBar!!.progress = progress
 
         return view
@@ -63,6 +71,14 @@ class ScheduleFragment : Fragment() {
             total = eMin * 0.14 + eHour * 8.3
             progress = total.toInt()
         }
+    }
+
+    fun getTime(){
+        val now = System.currentTimeMillis()
+        val date = Date(now)
+        val dateFormat = SimpleDateFormat("hhmm")
+        val getTime = dateFormat.format(date)
+        time = getTime
     }
 
     companion object {
