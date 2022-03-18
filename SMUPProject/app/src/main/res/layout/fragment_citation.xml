@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.makeid.CitationFragment">
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/inter_semibold"
+        android:includeFontPadding="false"
+        android:text="이메일 인증"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter_medium"
+        android:includeFontPadding="false"
+        android:text="입력하신 이메일로 6자리 인증 코드를 보냈어요."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+
+   <Button
+        android:id="@+id/btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/make_id_btn"
+        android:text="학교 설정 >"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

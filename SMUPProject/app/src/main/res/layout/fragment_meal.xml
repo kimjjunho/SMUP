@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="@+id/first_text"
         app:layout_constraintTop_toTopOf="@+id/day_text" />
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/first_text"
         android:layout_width="300dp"
         android:layout_height="115dp"
@@ -65,9 +65,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+        app:layout_constraintTop_toBottomOf="@+id/date_text" >
 
-    <TextView
+        <TextView
+            android:id="@+id/first_tV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:text="오늘"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:fontFamily="@font/inter_semibold"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/second_text"
         android:layout_width="300dp"
         android:layout_height="115dp"
@@ -75,9 +90,24 @@
         android:background="@drawable/meal_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/first_text" />
+        app:layout_constraintTop_toBottomOf="@+id/first_text">
 
-    <TextView
+        <TextView
+            android:id="@+id/second_tV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="급식"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/third_text"
         android:layout_width="300dp"
         android:layout_height="115dp"
@@ -85,5 +115,19 @@
         android:background="@drawable/meal_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_text" />
+        app:layout_constraintTop_toBottomOf="@+id/second_text" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="와이파이"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
