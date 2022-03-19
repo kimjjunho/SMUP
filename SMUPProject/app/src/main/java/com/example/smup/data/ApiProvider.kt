@@ -1,4 +1,4 @@
-package com.example.smup.ui
+package com.example.smup.feature
 
 import com.example.smup.data.home.MealApi
 import retrofit2.Retrofit

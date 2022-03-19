@@ -1,4 +1,4 @@
-package com.example.smup.ui
+package com.example.smup.feature
 
 data class MealResponse(
     val breakfast : String,

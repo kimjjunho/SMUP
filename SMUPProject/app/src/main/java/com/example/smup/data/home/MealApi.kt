@@ -1,6 +1,6 @@
 package com.example.smup.data.home
 
-import com.example.smup.ui.MealResponse
+import com.example.smup.feature.MealResponse
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.GET

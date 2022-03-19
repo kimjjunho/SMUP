@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.makeid.SchoolInfoFragment">
+    tools:context=".feature.makeid.SchoolInfoFragment">
 
     <Button
         android:id="@+id/btn"

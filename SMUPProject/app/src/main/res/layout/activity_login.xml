@@ -6,13 +6,13 @@
     <data>
         <variable
             name="vm"
-            type="com.example.smup.ui.login.viewmodel.LoginViewModel" />
+            type="com.example.smup.feature.login.viewmodel.LoginViewModel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.ui.LoginActivity">
+    tools:context=".feature.login.ui.LoginActivity">
     
     <TextView
         android:id="@+id/textView22"
