@@ -15,4 +15,5 @@ interface MealApi {
     fun getMeal(
         @Query("date") date : String
     ) : Single<Response<MealResponse>>
+
 }

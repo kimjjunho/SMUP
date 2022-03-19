@@ -52,6 +52,15 @@ dependencies {
     // okhttp3
     implementation 'com.squareup.okhttp3:logging-interceptor:4.5.0'
 
+    //koin
+    def koin_version = "2.1.6"
+
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-androidx-scope:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-androidx-viewmodel:$koin_version"
+    androidTestImplementation "io.insert-koin:koin-test:$koin_version"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.4.0'

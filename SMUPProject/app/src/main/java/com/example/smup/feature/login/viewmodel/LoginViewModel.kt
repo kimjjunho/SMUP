@@ -1,4 +1,10 @@
 package com.example.smup.feature.login.viewmodel
 
-class LoginViewModel {
+import androidx.lifecycle.ViewModel
+import com.example.smup.data.login.LoginRepository
+
+class LoginViewModel(
+    private val rp:LoginRepository
+):ViewModel(){
+
 }
