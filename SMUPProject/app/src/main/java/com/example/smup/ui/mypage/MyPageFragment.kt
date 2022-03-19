@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import com.example.smup.R
 import com.example.smup.databinding.FragmentMyPageBinding
 import com.example.smup.ui.MainActivity
-import com.example.smup.ui.login.LoginActivity
+import com.example.smup.ui.login.ui.LoginActivity
 
 class MyPageFragment : Fragment() {
 
