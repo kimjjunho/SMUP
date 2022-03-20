@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mypage.SchoolActivity">
+    tools:context=".feature.mypage.SchoolActivity">
 
     <ImageButton
         android:id="@+id/back_image"
@@ -17,11 +17,110 @@
         app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_regular"
+        android:includeFontPadding="false"
+        android:text="학교 설정"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="81dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter_bold"
+        android:includeFontPadding="false"
+        android:text="재학중인 학교"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/back_image" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/school_text"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="start|center_vertical"
+            android:includeFontPadding="false"
+            android:text="고등학교"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="수정"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/school_circle_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="30dp"
+        android:background="@drawable/school_text"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        tools:layout_editor_absoluteY="277dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="start|center_vertical"
+            android:includeFontPadding="false"
+            android:text="고등학교"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="학교 설정"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_bold"
+        android:background="@drawable/school_btn"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline17"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
