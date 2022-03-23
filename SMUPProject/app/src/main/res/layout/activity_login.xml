@@ -52,6 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23">
         <EditText
+            android:id="@+id/text_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Id or E-mail"
@@ -75,6 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
         <EditText
+            android:id="@+id/text_pass"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="password"
