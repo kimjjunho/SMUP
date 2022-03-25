@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649286128805",
+    "project_id": "smup-fea29",
+    "storage_bucket": "smup-fea29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649286128805:android:17bb542dd6fec88c11294c",
+        "android_client_info": {
+          "package_name": "com.example.smup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649286128805-n3qeee4cemuhc1g8p4e5h7biv7fe3e7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAygi_zAAQy7kDs-Evn3QrQd5OhJLmCHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649286128805-n3qeee4cemuhc1g8p4e5h7biv7fe3e7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
