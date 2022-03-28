@@ -1,6 +1,6 @@
 package com.example.smup.data.home
 
-import com.example.smup.feature.MealResponse
+import com.example.smup.feature.home.meal.model.MealResponse
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.GET
@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface MealApi {
     @GET("meal/today")
     fun getTodayMeal(
-    ) : Single<Response<TodayMealResponse>>
+    ) : Single<Response<MealResponse>>
 
     @GET("meal")
     fun getMeal(

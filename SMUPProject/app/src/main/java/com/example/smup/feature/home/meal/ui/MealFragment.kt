@@ -1,4 +1,4 @@
-package com.example.smup.feature.home
+package com.example.smup.feature.home.meal.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
