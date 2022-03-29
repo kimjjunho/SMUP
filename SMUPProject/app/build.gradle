@@ -73,6 +73,9 @@ dependencies {
     //by viewModel()사용
     implementation 'androidx.activity:activity-ktx:1.2.0'
 
+    //fcm
+    implementation 'com.google.firebase:firebase-messaging:11.6.2'
+
     implementation "io.insert-koin:koin-core:$koin_version"
     implementation "io.insert-koin:koin-androidx-scope:$koin_version"
     implementation "io.insert-koin:koin-android:$koin_version"
