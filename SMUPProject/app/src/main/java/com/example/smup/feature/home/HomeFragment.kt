@@ -10,6 +10,7 @@ import com.example.smup.feature.MainActivity
 import com.example.smup.R
 import com.example.smup.databinding.FragmentHomeBinding
 import com.example.smup.feature.home.alarm.AlarmActivity
+import com.example.smup.feature.home.meal.ui.MealFragment
 
 class HomeFragment : Fragment() {
 
