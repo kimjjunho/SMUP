@@ -1,6 +1,5 @@
 package com.example.smup.data.login
 
-import com.example.smup.feature.MealResponse
 import com.example.smup.feature.login.model.LoginRequest
 import com.example.smup.feature.login.model.LoginResponse
 import io.reactivex.rxjava3.core.Single
