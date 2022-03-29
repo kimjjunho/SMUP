@@ -8,7 +8,6 @@ import com.example.smup.data.login.LoginRepository
 import com.example.smup.feature.ACCESS_TOKEN
 import com.example.smup.feature.REFRESH_TOKEN
 import com.example.smup.feature.login.model.LoginRequest
-import kotlin.math.log
 
 class LoginViewModel(
     private val rp:LoginRepository
