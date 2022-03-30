@@ -12,6 +12,8 @@ import com.example.smup.databinding.FragmentScheduleBinding
 import com.example.smup.feature.home.meal.viewmodel.MealViewModel
 import com.example.smup.feature.home.schedule.viewmodel.ScheduleViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.text.SimpleDateFormat
+import java.util.*
 
 class ScheduleFragment : Fragment() {
     val TAG = "ScheduleFragment"
@@ -31,7 +33,8 @@ class ScheduleFragment : Fragment() {
         val view = binding.root
         val binding = FragmentScheduleBinding.bind(view)
 
-        
+        dBinding.tvRealTime.text = setTime()
+
         vm.schedule()
 
         observeEvent()
@@ -56,6 +59,13 @@ class ScheduleFragment : Fragment() {
                 }
             })
         }
+    }
+    fun setTime(): String {
+        val cal = Calendar.getInstance()
+        cal.time = Date()
+        val format = SimpleDateFormat("HH:mm")
+
+        return format.format(cal.time).toString()
     }
     companion object {
 
