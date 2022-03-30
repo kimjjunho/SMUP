@@ -12,6 +12,7 @@ class ScheduleViewModel(
 
     val progressTotal : MutableLiveData<String> = MutableLiveData()
     val rotaionTotal : MutableLiveData<String> = MutableLiveData()
+    val timeTotal : MutableLiveData<String> = MutableLiveData()
 
     private var progress = 0
     private var rotaion = 0F
@@ -61,5 +62,13 @@ class ScheduleViewModel(
         val dateFormat = SimpleDateFormat("hhmm")
         val getTime = dateFormat.format(date)
         time = getTime
+    }
+
+    fun setTime(){
+        val cal = Calendar.getInstance()
+        cal.time = Date()
+        val format = SimpleDateFormat("HH:mm")
+
+        timeTotal.value = format.format(cal.time).toString()
     }
 }

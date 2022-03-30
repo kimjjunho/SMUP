@@ -33,9 +33,8 @@ class ScheduleFragment : Fragment() {
         val view = binding.root
         val binding = FragmentScheduleBinding.bind(view)
 
-        dBinding.tvRealTime.text = setTime()
-
         vm.schedule()
+        vm.setTime()
 
         observeEvent()
 
@@ -58,15 +57,14 @@ class ScheduleFragment : Fragment() {
                     progressBar!!.rotation = it.toFloat()
                 }
             })
+            vm.timeTotal.observe(it,{
+                it.run{
+                    dBinding.tvRealTime.text = it
+                }
+            })
         }
     }
-    fun setTime(): String {
-        val cal = Calendar.getInstance()
-        cal.time = Date()
-        val format = SimpleDateFormat("HH:mm")
 
-        return format.format(cal.time).toString()
-    }
     companion object {
 
     }
