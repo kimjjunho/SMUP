@@ -1,4 +1,4 @@
-package com.example.smup.data.home
+package com.example.smup.data.home.meal
 
 import com.example.smup.feature.home.meal.model.MealResponse
 import com.example.smup.feature.mealApi

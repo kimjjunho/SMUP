@@ -15,7 +15,8 @@ class SmupApplication : Application() {
             modules(
                 listOf(
                     loginModule,
-                    mealModule
+                    mealModule,
+                    scheduleModule
                 )
             )
         }

@@ -11,6 +11,7 @@ import com.example.smup.R
 import com.example.smup.databinding.FragmentHomeBinding
 import com.example.smup.feature.home.alarm.AlarmActivity
 import com.example.smup.feature.home.meal.ui.MealFragment
+import com.example.smup.feature.home.schedule.ui.ScheduleFragment
 
 class HomeFragment : Fragment() {
 

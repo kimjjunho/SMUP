@@ -1,7 +1,6 @@
 package com.example.smup.feature.home.meal.ui
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +8,6 @@ import android.view.ViewGroup
 import com.example.smup.databinding.FragmentMealBinding
 import com.example.smup.feature.home.meal.viewmodel.MealViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.text.DateFormat
-import java.text.SimpleDateFormat
-import java.util.*
 
 class MealFragment : Fragment() {
     val TAG = "MealFragment"

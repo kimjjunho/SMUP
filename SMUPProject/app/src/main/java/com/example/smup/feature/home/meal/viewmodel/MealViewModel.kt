@@ -1,9 +1,8 @@
 package com.example.smup.feature.home.meal.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.smup.data.home.MealRepository
+import com.example.smup.data.home.meal.MealRepository
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
