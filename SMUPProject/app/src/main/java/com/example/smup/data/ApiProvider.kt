@@ -1,6 +1,6 @@
 package com.example.smup.feature
 
-import com.example.smup.data.home.MealApi
+import com.example.smup.data.home.meal.MealApi
 import com.example.smup.data.login.LoginApi
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
